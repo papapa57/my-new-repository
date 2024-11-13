@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* 共通設定 */
+
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+
+/* 各種フォントスタイル設定
+余白位置などは各セクションで指定 */
+
+.fontstyles-sitetitle-en {
+  color: #333333;
+  font-size: 36px;
+  font-family: "Barlow Condensed", serif;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fontstyles-sitetitle-en span {
+  color: #969696;
+}
+.fontstyles-big-title-en {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 180px;
+  margin-left: 128px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  margin-top: 39px;
+}
+
+.fontstyles-title-en {
+  color: #333333;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  }
+
+  .fontstyles-big-text-en {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 128px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    font-size: 34px;
+    margin-top: 8px;
+  }
+
+.fontstyles-text-en {
+  padding: 0 24px;
+  font-family: "Barlow Condensed", serif;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #333333;
+  font-size: 18px;
+}
+
+
+.fontstyles-title-ja {
+color: #333333;
+font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0.05em;
+
+}
+
+.fontstyles-text-ja {
+color: #333333;
+font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 170%;
+letter-spacing: 0.05em;
+}
+/* 見出し、本文のスタイル設定ここまで */
+/* ボタン　スタイル設定 */
+.fontstyles-btn-en-01 {
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+padding: 8px 16px;
+width: 86px;
+border-radius: 30px;
+background-color: #333333;
+}
+
+.fontstyles-btn-en-02 {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  }
+/*  */
+
+
+
+/* headerここから */
+
+.header {
+  padding: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 161px;
+  border: #333333 1px solid;
+  position: relative;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 72px;
+  height: 161px;
+
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon li {
+  padding-left: 8px;
+}
+
+.header-icon li:last-child {
+  padding-left: 64px;
+}
+
+.sub-visual-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 32px;
+  margin-top: 158px;
+}
+/* メイン画像　positionでheaderに設定 */
+.main-visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* 各セクションここから 
+pickupitems セクション*/
+
+
+.pickupitems-sec {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 96px;
+}
+
+.pickupitems-sec-content-01,.pickupitems-sec-content-02 {
+  width: 352px;
+  height: 401px;
+}
+
+.pickupitems-sec-content-01 p {
+  margin-top: 12px;
+  
+}
+.pickupitems-sec-content-02 h2 {
+  margin-top: 32px;
+}
+
+.pickupitems-sec-content-02 p {
+  margin-top: 16px;
+}
+.pickupitems-sec-btn {
+margin: 0  0 0 auto;
+}
+
+
