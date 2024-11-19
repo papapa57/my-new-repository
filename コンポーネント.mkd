@@ -1,0 +1,181 @@
+
+<!-- モジュール管理 -->
+
+
+<!-- media  メディア -->
+<!-- 左側にイメージ画像、右側にテキストを配置するモジュール -->
+<!-- html -->
+<div class="media">                                           
+  <figure class="media-img">
+    <img src="" alt="">
+  </figure>media
+  <div class="media-body">
+    <h3 class="media-title">
+　　　　タイトルタイトル
+    </h3>
+    <p class="media-text">
+      テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    </p>
+  </div>
+</div>
+<!-- css -->
+.media {
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 100%;
+  
+}
+
+<!-- card カード -->
+<!-- 上部に画像があり、下部にタイトルとテキストが続くモジュール　 -->
+<!-- 下部はタイトルのみの場合やテキストのみの場合もある -->
+<!-- html -->
+<div class="card">
+ <figure class="card-img">
+    <img src="" alt="">
+  </figure>media
+  <div class="card-body">
+    <h3 class="card-title">
+　　　　　タイトルタイトル
+    </h3>
+    <p class="card-text">
+      テキストテキストテキストテキストテキストテキストテキストテキスト
+    </p>
+  </div>
+</div>
+<!-- css -->
+.card-body {
+  padding: 15px;
+}
+card-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+card-text {
+  color: #777;
+}
+<!--card　カードのカラム様式   -->
+<!-- カードを複数枚、横に並べたもの　縦の列を column カラムと呼ぶ -->
+<!-- html -->
+<div class="cards-3column">
+ <div class="cards-item">
+ <figure class="card-img">
+    <img src="" alt="">
+  </figure>media
+  <div class="cards-item-body">
+    <h3 class="cards-item-title">
+　　　　　タイトルタイトル
+    </h3>
+    <p class="cards-item-text">
+      テキストテキストテキストテキストテキストテキストテキストテキスト
+    </p>
+  </div>
+</div>
+<!-- css -->
+.cards-3column {
+  display: flex;
+  align-items: center;
+}
+
+<!-- table テーブル　水平 -->
+<!-- 見出しとそれに対応するセルが水平方向に並ぶテーブル -->
+<!-- html -->
+<div class="horizon-table">
+<table>
+<tbody>
+  <tr>
+   <th>名前</th>
+   <td>半田敦</td>
+  </tr>
+  <tr>
+    <th>所属</th>
+    <td>株式会社24-7/株式会社パンセ</td>
+  </tr>
+  <tr>
+    <th>職種</th>
+    <td>テクニカルディレクター</td>
+  </tr>
+   <tr>
+    <th>得意分野</th>
+    <td>CSS設計、CMS</td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<!-- table テーブル　垂直 -->
+<!-- 見出しとそれに対応するセルが垂直方向に並ぶテーブル -->
+<!-- html -->
+<div class="vertical-table">
+<table>
+<thead>
+  <tr>
+    <th>名前</th>
+    <th>所属</th>
+    <th>職種</th>
+    <th>得意分野</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>半田敦</td>
+    <td>株式会社24-7/株式会社パンセ</td>
+    <td>テクニカルディレクター</td>
+    <td>CSS設計、CMS</td>
+  </tr>
+ <tr>
+    <td>長澤健</td>
+    <td>株式会社パンセ</td>
+    <td>ディレクター</td>
+    <td>adobe</td>
+  </tr>
+   <tr>
+    <td>海老根</td>
+    <td>株式会社パンセ</td>
+    <td>エンジニア</td>
+    <td>vue.js</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<!-- table テーブル　交差 -->
+<!-- 1行目は見出しが水平方向で、2行目以降は最初のセルが見出しになるテーブル -->
+<!-- html -->
+<div class="cross-table">
+<table>
+<thead>
+  <tr>
+    <th class="background mdsticky">名前</th>
+    <th>所属</th>
+    <th>職種</th>
+    <th>得意分野</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th class="background mdsticky">半田敦</th>
+    <td>株式会社24-7/株式会社パンセ</td>
+    <td>テクニカルディレクター</td>
+    <td>CSS設計、CMS</td>
+  </tr>
+ <tr>
+    <th class="background mdsticky">長澤健</th>
+    <td>株式会社パンセ</td>
+    <td>ディレクター</td>
+    <td>adobe</td>
+  </tr>
+   <tr>
+    <th class="background mdsticky">海老根</th>
+    <td>株式会社パンセ</td>
+    <td>エンジニア</td>
+    <td>vue.js</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<!-- css -->
+.cross-table th {
+  background-color: #efefef;
+}

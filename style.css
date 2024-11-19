@@ -2,7 +2,7 @@
 
 /* 共通設定 */
 
-
+/* base  */
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -15,8 +15,9 @@ ul {
 img {
   vertical-align: bottom;
 }
+/* layout */
 
-.wrapper {
+.layout_wrapper {
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -28,7 +29,7 @@ img {
 /* 各種フォントスタイル設定
 余白位置などは各セクションで指定 */
 
-.fontstyles-sitetitle-en {
+.layout_logo-en {
   color: #333333;
   font-size: 36px;
   font-family: "Barlow Condensed", serif;
@@ -38,11 +39,11 @@ img {
   font-style: normal;
 }
 
-.sitetitle-red {
+.layout_logo-en-red {
   color: #969696;
 }
 
-.fontstyles-big-title-en {
+.layout_big-title-en {
   font-family: "Barlow Condensed", serif;
   font-weight: 500;
   font-style: normal;
@@ -53,7 +54,7 @@ img {
   margin-top: 39px;
 }
 
-.fontstyles-title-en {
+.layout_title-en {
   color: #333333;
   font-family: 'Barlow Condensed';
   font-style: normal;
@@ -63,7 +64,7 @@ img {
   letter-spacing: 0.1em;
 }
 
-.fontstyles-big-text-en {
+.layout_big-text-en {
   font-family: "Barlow Condensed", serif;
   font-weight: 500;
   font-style: normal;
@@ -74,7 +75,7 @@ img {
   margin-top: 8px;
 }
 
-.fontstyles-text-en {
+.layout_text-en {
   padding: 0 24px;
   font-family: "Barlow Condensed", serif;
   line-height: 100%;
@@ -84,7 +85,7 @@ img {
 }
 
 
-.fontstyles-title-ja {
+.layout_title-ja {
   color: #333333;
   font-family: 'Noto Sans JP';
   font-style: normal;
@@ -94,7 +95,7 @@ img {
   letter-spacing: 0.05em;
 }
 
-.fontstyles-text-ja {
+.layout_text-ja {
   color: #333333;
   font-family: 'Noto Sans JP';
   font-style: normal;
@@ -105,8 +106,10 @@ img {
 }
 
 /* 見出し、本文のスタイル設定ここまで */
-/* ボタン　スタイル設定 */
-.fontstyles-btn-en-01 {
+
+/* モジュール設定 ボタン、タグ、アイコン、メディア */
+/* ボタン */
+.btn-en-01 {
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 500;
@@ -120,7 +123,7 @@ img {
   background-color: #333333;
 }
 
-.fontstyles-btn-en-02 {
+.btn-en-02 {
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 500;
@@ -130,7 +133,7 @@ img {
   color: #FFFFFF;
 }
 
-.fontstyles-btn-ja-01 {
+.btn-ja-01 {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 500;
@@ -145,7 +148,6 @@ img {
 }
 
 /* #タグ */
-
 .tag-mini {
   font-family: 'Noto Sans JP';
   font-style: normal;
@@ -159,7 +161,6 @@ img {
 }
 
 /* new-icon */
-
 .new-icon {
   padding: 4px;
   background: #E58FB3;
@@ -171,15 +172,19 @@ img {
   line-height: 100%;
   letter-spacing: 0.05em;
   width: 29px;
-
 }
-.icon-menu {
+/* SNS-icon */
+.SNS-icon-menu {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
-
+/*メディア  */
+.media-01 {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
 
 /* headerここから */
 
@@ -283,13 +288,9 @@ pickupitems セクション*/
 
 
 
-.image-container-01 {
-  display: flex;
-  justify-content: center;
-  gap: 64px;
-}
 
-.fontstyles-text-ja-01 {
+
+.about-sec-text {
   line-height: 200%;
 }
 
