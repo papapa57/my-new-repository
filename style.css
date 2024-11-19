@@ -15,11 +15,15 @@ ul {
 img {
   vertical-align: bottom;
 }
+
 .wrapper {
   max-width: 1120px;
   margin: 0 auto;
 }
 
+.sec-title {
+  text-align: center;
+}
 
 /* 各種フォントスタイル設定
 余白位置などは各セクションで指定 */
@@ -34,9 +38,10 @@ img {
   font-style: normal;
 }
 
-.fontstyles-sitetitle-en span {
+.sitetitle-red {
   color: #969696;
 }
+
 .fontstyles-big-title-en {
   font-family: "Barlow Condensed", serif;
   font-weight: 500;
@@ -56,18 +61,18 @@ img {
   font-size: 64px;
   line-height: 100%;
   letter-spacing: 0.1em;
-  }
+}
 
-  .fontstyles-big-text-en {
-    font-family: "Barlow Condensed", serif;
-    font-weight: 500;
-    font-style: normal;
-    margin-left: 128px;
-    line-height: 100%;
-    letter-spacing: 0.06em;
-    font-size: 34px;
-    margin-top: 8px;
-  }
+.fontstyles-big-text-en {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 128px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  font-size: 34px;
+  margin-top: 8px;
+}
 
 .fontstyles-text-en {
   padding: 0 24px;
@@ -80,39 +85,39 @@ img {
 
 
 .fontstyles-title-ja {
-color: #333333;
-font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 150%;
-letter-spacing: 0.05em;
-
+  color: #333333;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
 }
 
 .fontstyles-text-ja {
-color: #333333;
-font-family: 'Noto Sans JP';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 170%;
-letter-spacing: 0.05em;
+  color: #333333;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.05em;
 }
+
 /* 見出し、本文のスタイル設定ここまで */
 /* ボタン　スタイル設定 */
 .fontstyles-btn-en-01 {
-font-family: 'Barlow Condensed';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 100%;
-letter-spacing: 0.1em;
-color: #FFFFFF;
-padding: 8px 16px;
-width: 86px;
-border-radius: 30px;
-background-color: #333333;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  width: 86px;
+  border-radius: 30px;
+  background-color: #333333;
 }
 
 .fontstyles-btn-en-02 {
@@ -123,8 +128,56 @@ background-color: #333333;
   line-height: 100%;
   letter-spacing: 0.1em;
   color: #FFFFFF;
-  }
-/*  */
+}
+
+.fontstyles-btn-ja-01 {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding: 12px 40px;
+  background: #333333;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+/* #タグ */
+
+.tag-mini {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  color: #E58FB3;
+  border: #969696 1px solid;
+  border-radius: 30px;
+  padding: 4px 8px;
+}
+
+/* new-icon */
+
+.new-icon {
+  padding: 4px;
+  background: #E58FB3;
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  width: 29px;
+
+}
+.icon-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 
 
@@ -136,7 +189,6 @@ background-color: #333333;
   justify-content: space-between;
   align-items: center;
   height: 161px;
-  border: #333333 1px solid;
   position: relative;
 }
 
@@ -144,11 +196,13 @@ background-color: #333333;
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 72px;
+  gap: 96px;
   height: 161px;
 
 }
-
+.sitetitle {
+  width: 150px;
+}
 
 
 nav {
@@ -160,17 +214,10 @@ nav {
 .header-menu {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 48px;
 }
 
-.header-icon {
-  display: flex;
-  align-items: center;
-}
 
-.header-icon li {
-  padding-left: 8px;
-}
 
 .header-icon li:last-child {
   padding-left: 64px;
@@ -183,6 +230,7 @@ nav {
   gap: 32px;
   margin-top: 158px;
 }
+
 /* メイン画像　positionでheaderに設定 */
 .main-visual {
   position: absolute;
@@ -203,15 +251,17 @@ pickupitems セクション*/
   margin-top: 96px;
 }
 
-.pickupitems-sec-content-01,.pickupitems-sec-content-02 {
+.pickupitems-sec-content-01,
+.pickupitems-sec-content-02 {
   width: 352px;
   height: 401px;
 }
 
 .pickupitems-sec-content-01 p {
   margin-top: 12px;
-  
+
 }
+
 .pickupitems-sec-content-02 h2 {
   margin-top: 32px;
 }
@@ -219,8 +269,92 @@ pickupitems セクション*/
 .pickupitems-sec-content-02 p {
   margin-top: 16px;
 }
+
 .pickupitems-sec-btn {
-margin: 0  0 0 auto;
+  margin: 0 0 0 auto;
+}
+
+/* about セクション */
+
+.sec-title {
+  margin-bottom: 48px;
+  margin-top: 96px;
 }
 
 
+
+.image-container-01 {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.fontstyles-text-ja-01 {
+  line-height: 200%;
+}
+
+/* 　journal セクション */
+.image-container-02 {
+  display: flex;
+  gap: 32px;
+}
+
+.image-card {
+  width: 256px;
+}
+
+.image-card li:first-child {
+  position: relative;
+}
+
+.image-position {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 0 8px 0;
+
+}
+
+.image-card-title {
+  margin-bottom: 8px;
+}
+
+.journal-sec-btn {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* footer ここから */
+.footer-background {
+  background: #eeeeee;
+  margin-top: 96px;
+}
+
+.footer-outer {
+  padding: 160px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu {
+  display: flex;
+  align-items: center;
+}
+.footer-menu li {
+  padding:0 24px;
+
+}
+.footer-content {
+  display: flex;
+  gap: 80px;
+}
+.copyright {
+  margin-top: 16px;
+}
