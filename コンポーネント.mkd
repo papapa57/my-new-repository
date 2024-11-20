@@ -1,7 +1,151 @@
+<!-- レイアウト管理 -->
+<!-- ヘッダー -->
+ヘッダーアウターとヘッダーインナーに分けて配置する。
+<!-- html -->
+<!-- 外側にあたる要素 -->
+<header class="header-outer">
+<!-- 内側にあたる要素 -->
+<div class="header-inner">
+<!-- 以下、モジュールが続く -->
+</div> header-inner
+</header>
+
+<!-- css -->
+.header-outer {
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+<!-- .header-outer では最大幅の指定なし -->
+
+.header-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+<!-- フッター -->
+フッターアウターとフッターインナーに分けて配置する。
+<!-- html -->
+<!-- 外側にあたる要素 -->
+<footer class="footer">
+
+<div class="footer-outer">
+<!-- 内側にあたる要素 -->
+<div class="footer-inner">
+<!-- 以下、モジュールが続く -->
+</div> footer-outer
+</div> footer-inner
+
+<div class="footer-outer border-top-gray">
+<!-- 内側にあたる要素 -->
+<div class="footer-inner">
+<!-- 以下、モジュールが続く -->
+</div> footer-outer
+</div> footer-inner
+</footer>
+
+<!-- css -->
+.footer-outer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.footer-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.border-top-gray {
+  border-top: 1px solid #777;
+}
+<!-- コンテンツエリア -->
+<!-- content-area-outerがない場合 -->
+<!-- html -->
+<header class="header-outer">
+省略
+</header>
+ <main>
+    <article>
+      <section class="content-area">
+      </section>
+    </article>
+ </main>
+<footer>
+省略
+</footer>
+<!-- css -->
+.content-area {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;   指定内容はheader-innnerとfooter-innerと同じ
+}
+<!-- content-area-outerがある場合 -->
+<header class="header-outer">
+省略
+</header>
+ <main>
+    <article>
+      <section class="content-area-background">
+      　<div class="content-area">
+        </div>
+      </section>
+    </article>
+ </main>
+<footer>
+省略
+</footer>
+<!-- css -->
+.content-area-background {
+  background-color: #333333;
+   padding-top: 60px;
+}
+.content-area {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;   
+}
+<!-- コンテンツエリア 2column設計-->
+<!-- コンテンツエリアは状況によってinnerにもouterにもなるのでどちらか特定されるような名前は付けない-->
+<div class="content-area content-2col">
+ <main class="content-area-main">
+    <article>
+省略
+    </article>
+ </main>
+ <aside class="content-area-side">
+    <article>
+省略
+    </article>
+ </aside>
+</div>
+<!-- css -->
+.content-area {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;   
+}
+.content-2col {
+  display: flex;
+  justify-content: space-between;
+}
+.content-area-main {
+  flex: 1;
+  margin-right: 3%
+}
+.content-area-side {
+  flex: 0 0 260px;
+}
+
 
 <!-- モジュール管理 -->
 
+<!-- btn ボタン -->
+<!--  -->
+<!-- html -->
+<!-- 最小モジュール -->
 
+<!-- 複合モジュール -->
 <!-- media  メディア -->
 <!-- 左側にイメージ画像、右側にテキストを配置するモジュール -->
 <!-- html -->
@@ -11,7 +155,7 @@
   </figure>media
   <div class="media-body">
     <h3 class="media-title">
-　　　　タイトルタイトル
+           タイトルタイトル
     </h3>
     <p class="media-text">
       テキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -38,7 +182,7 @@ img {
   </figure>media
   <div class="card-body">
     <h3 class="card-title">
-　　　　　タイトルタイトル
+        タイトルタイトル
     </h3>
     <p class="card-text">
       テキストテキストテキストテキストテキストテキストテキストテキスト
@@ -66,7 +210,7 @@ card-text {
   </figure>media
   <div class="cards-item-body">
     <h3 class="cards-item-title">
-　　　　　タイトルタイトル
+          タイトルタイトル
     </h3>
     <p class="cards-item-text">
       テキストテキストテキストテキストテキストテキストテキストテキスト
