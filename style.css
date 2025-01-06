@@ -1,361 +1,587 @@
 @charset "utf-8";
 
-/* 共通設定 */
+html {
+  font-size: 62.5%;
+}
 
-/* base  */
 body {
-  max-width: 1440px;
+  color: #444444;
+  font-family: Noto Sans JP;
+}
+
+/* ヘッダーここから */
+.layout_header-inner {
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 29px;
   margin: 0 auto;
 }
 
-ul {
-  list-style: none;
-}
-
-img {
-  vertical-align: bottom;
-}
-/* layout */
-
-.layout_wrapper {
-  max-width: 1120px;
-  margin: 0 auto;
-}
-
-.sec-title {
-  text-align: center;
-}
-
-/* 各種フォントスタイル設定
-余白位置などは各セクションで指定 */
-
-.layout_logo-en {
-  color: #333333;
-  font-size: 36px;
-  font-family: "Barlow Condensed", serif;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.layout_logo-en-red {
-  color: #969696;
-}
-
-.layout_big-title-en {
-  font-family: "Barlow Condensed", serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 180px;
-  margin-left: 128px;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  margin-top: 39px;
-}
-
-.layout_title-en {
-  color: #333333;
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 0.1em;
-}
-
-.layout_big-text-en {
-  font-family: "Barlow Condensed", serif;
-  font-weight: 500;
-  font-style: normal;
-  margin-left: 128px;
-  line-height: 100%;
-  letter-spacing: 0.06em;
-  font-size: 34px;
-  margin-top: 8px;
-}
-
-.layout_text-en {
-  padding: 0 24px;
-  font-family: "Barlow Condensed", serif;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  color: #333333;
-  font-size: 18px;
-}
-
-
-.layout_title-ja {
-  color: #333333;
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: 0.05em;
-}
-
-.layout_text-ja {
-  color: #333333;
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 170%;
-  letter-spacing: 0.05em;
-}
-
-/* 見出し、本文のスタイル設定ここまで */
-
-/* モジュール設定 ボタン、タグ、アイコン、メディア */
-/* ボタン */
-.btn-en-01 {
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
-  padding: 8px 16px;
-  width: 86px;
-  border-radius: 30px;
-  background-color: #333333;
-}
-
-.btn-en-02 {
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
-}
-
-.btn-ja-01 {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
-  padding: 12px 40px;
-  background: #333333;
-  border-radius: 30px;
-  display: inline-block;
-}
-
-/* #タグ */
-.tag-mini {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 100%;
-  color: #E58FB3;
-  border: #969696 1px solid;
-  border-radius: 30px;
-  padding: 4px 8px;
-}
-
-/* new-icon */
-.new-icon {
-  padding: 4px;
-  background: #E58FB3;
-  color: #FFFFFF;
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  width: 29px;
-}
-/* SNS-icon */
-.SNS-icon-menu {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-/*メディア  */
-.media-01 {
-  display: flex;
-  justify-content: center;
-  gap: 64px;
-}
-
-/* headerここから */
-
-.header {
-  padding: 0 64px;
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 161px;
-  position: relative;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 96px;
-  height: 161px;
-
-}
-.sitetitle {
-  width: 150px;
-}
-
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-menu {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-
-
-
-.header-icon li:last-child {
-  padding-left: 64px;
-}
-
-.sub-visual-container {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 32px;
-  margin-top: 158px;
-}
-
-/* メイン画像　positionでheaderに設定 */
-.main-visual {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-/* 各セクションここから 
-pickupitems セクション*/
-
-
-.pickupitems-sec {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 32px;
-  margin-top: 96px;
-}
-
-.pickupitems-sec-content-01,
-.pickupitems-sec-content-02 {
-  width: 352px;
-  height: 401px;
-}
-
-.pickupitems-sec-content-01 p {
-  margin-top: 12px;
-
-}
-
-.pickupitems-sec-content-02 h2 {
-  margin-top: 32px;
-}
-
-.pickupitems-sec-content-02 p {
-  margin-top: 16px;
-}
-
-.pickupitems-sec-btn {
-  margin: 0 0 0 auto;
-}
-
-/* about セクション */
-
-.sec-title {
-  margin-bottom: 48px;
-  margin-top: 96px;
-}
-
-
-
-
-
-.about-sec-text {
-  line-height: 200%;
-}
-
-/* 　journal セクション */
-.image-container-02 {
-  display: flex;
-  gap: 32px;
-}
-
-.image-card {
-  width: 256px;
-}
-
-.image-card li:first-child {
-  position: relative;
-}
-
-.image-position {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.tag-group {
-  display: flex;
   flex-wrap: wrap;
-  margin: 24px 0 8px 0;
-
 }
 
-.image-card-title {
-  margin-bottom: 8px;
+.contact-info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
-.journal-sec-btn {
-  text-align: center;
-  margin-top: 48px;
+.header-tel-number {
+  padding-top: 7px;
+  text-align: right;
 }
 
-/* footer ここから */
-.footer-background {
-  background: #eeeeee;
-  margin-top: 96px;
+.tel-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #21A937;
 }
 
-.footer-outer {
-  padding: 160px;
+.tel-number img {
+  vertical-align: top;
 }
 
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-}
-.footer-menu {
-  display: flex;
-  align-items: center;
-}
-.footer-menu li {
-  padding:0 24px;
+/* ヘッダーここまで */
+/* メインビジュアルここから */
 
+.main-visual-content {
+  background-image: url(img/fv\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 947px;
+  margin-top: 27px;
 }
-.footer-content {
+
+.main-visual-text-outer {
   display: flex;
   gap: 80px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 211px;
+  padding-top: 133px;
 }
-.copyright {
-  margin-top: 16px;
+
+.main-visual-text {
+  writing-mode: vertical-rl;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  height: 565px;
+  line-height: 1;
+  letter-spacing: 7px;
+  padding-top: 18px;
+  padding-left: 37px;
+  padding-right: 37px;
+  background: #FFFFFF;
+}
+
+.color-red {
+  color: #21A937;
+}
+
+/* メインビジュアルここまで */
+/* アバウトセクションここから */
+
+.layout_content-area-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.about-sec-media {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 42px;
+  padding-top: 162px;
+  padding-bottom: 82px;
+  padding-left: 33px;
+}
+
+.media-image {
+  max-width: 690px;
+}
+
+.media-image img {
+  width: 100%;
+}
+
+.media-body {
+  padding-top: 18px;
+}
+
+.media-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2.78125;
+}
+
+.media-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.375;
+  margin-top: 21px;
+}
+
+.layout_content-area-background {
+  background: #F5FCF8;
+}
+
+/* アバウトセクションここまで */
+/* トリートメントセクションここから */
+
+.treatment-sec {
+  padding-top: 78px;
+}
+
+.sec-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.text-marker {
+  background: linear-gradient(transparent 70%, #99E5A5 10%);
+  color: #444444;
+
+}
+
+.treatment-sec-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.44;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.cards-3column {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 34px;
+}
+
+.card-item {
+  background: #FFFFFF;
+  padding-top: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 2px solid #C9C9C9;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.44;
+  text-align: center;
+
+}
+
+.card-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2.4;
+  margin-top: 45px;
+  width: 306px;
+  height: 230px;
+}
+
+.card-image {
+  margin-top: 54px;
+  text-align: center;
+
+}
+
+.card-item img {
+  width: 187px;
+  height: auto;
+}
+
+/* トリートメントセクションここまで */
+/* ニュースセクションここから */
+
+.news-sec {
+  padding-top: 82px;
+  padding-bottom: 113px;
+}
+
+.news-sec-wrapper {
+  padding-left: 66px;
+  padding-right: 66px;
+  padding-top: 32px;
+  padding-bottom: 46px;
+  margin-top: 70px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 6px 0px #00000029;
+}
+
+
+.news-list {
+  font-size: 16px;
+  line-height: 38.4px;
+  font-weight: 700;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom: 2px solid #E7E7E7;
+}
+
+
+.green {
+  color: #21A937;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.news-tag {
+  font-size: 12px;
+  background: #444444;
+  color: #FFFFFF;
+  padding: 4px 16px;
+  width: 80px;
+  text-align: center;
+  line-height: 17.38px;
+}
+
+.news-sec-btn {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+  padding-top: 45px
+}
+
+/* ニュースセクションここまで */
+/* インフォメーションセクションここから */
+.info-sec {
+  display: flex;
+  gap: 38px;
+  padding-top: 196px;
+}
+
+.map {
+  width: 52%;
+}
+
+
+.info-body {
+  width: 45%;
+}
+
+.hospital-adress {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  margin-top: 52px;
+}
+
+.info-tel-number {
+  margin-top: 30px;
+}
+
+.hospital-timetable {
+  border-top: 2px solid #E7E7E7;
+  border-bottom: 2px solid #E7E7E7;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  margin-top: 33px;
+}
+
+.info-sec dl {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info-sec dt {
+  width: 16%;
+  padding-right: 28px;
+  font-weight: 400;
+
+}
+
+.first-line {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2.2;
+  padding-left: 28px;
+  border-left: 2px solid #E7E7E7;
+  width: 84%;
+}
+
+.second-line {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2.2;
+  padding-left: 28px;
+  border-left: 2px solid #E7E7E7;
+}
+
+.third-line {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2.2;
+  padding-left: 28px;
+  border-left: 2px solid #E7E7E7;
+}
+
+.smalltext-marker {
+  background: linear-gradient(transparent 80%, #99E5A5 10%);
+  color: #444444;
+}
+
+.second-col {
+  padding-left: 23px;
+}
+
+.third-col {
+  padding-left: 17px;
+}
+
+.close-time {
+  display: flex;
+  margin-top: 29px;
+}
+
+.forth-line {
+  border-left: 2px solid #E7E7E7;
+  line-height: 2;
+  padding-left: 28px;
+}
+
+.hidden-text {
+  visibility: hidden;
+}
+
+/* インフォメーションセクションここまで */
+/* フッターここから */
+footer {
+  font-size: 11px;
+  font-weight: 400;
+  text-align: right;
+  max-width: 1180px;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+/* フッターここまで */
+@media screen and (max-width:1200px) {
+
+  .main-visual-content {
+    height: 600px;
+  }
+
+  .main-visual-text-outer {
+    gap: 50px;
+    padding-left: 100px;
+    padding-top: 20px;
+  }
+
+  .about-sec-media {
+    display: block;
+    padding-bottom: 50px;
+    padding-left: 0;
+  }
+
+  .media-image {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .media-image img {
+    width: 100%;
+  }
+
+  .media-body {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .media-title {
+    font-size: 32px;
+    line-height: 2;
+    padding-top: 50px;
+  }
+
+  .media-text {
+    font-size: 24px;
+    line-height: 3;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .sec-title {
+    font-size: 32px;
+  }
+
+
+  .treatment-sec-text {
+    display: none;
+  }
+
+  .text-marker {
+    background: linear-gradient(transparent 80%, #99E5A5 10%);
+  }
+
+  .cards-3column {
+    display: block;
+  }
+
+  .card-item {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .card-title {
+    font-size: 32px;
+  }
+
+  .card-text {
+    font-size: 24px;
+    line-height: 2.5;
+    width: 100%;
+    height: auto;
+  }
+
+  .news-sec {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+  }
+
+  .news-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .info-sec {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    flex-direction: column;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .info-body {
+    width: 100%;
+  }
+
+  .info-sec dt {
+    min-width: 100px;
+    padding-right: 28px;
+  }
+
+  .third-col {
+    padding-left: 65px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .header-content {
+    display: block;
+    text-align: center;
+  }
+
+  .header-tel-number {
+    text-align: center;
+  }
+
+  .main-visual-content {
+    background-position: 70%;
+    height: 480px;
+  }
+
+  .main-visual-text-outer {
+    gap: 20px;
+    padding-left: 30px;
+  }
+
+  .main-visual-text {
+    font-size: 20px;
+    height: 400px;
+    line-height: 1;
+    letter-spacing: 7px;
+    padding-top: 18px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background: #FFFFFF;
+  }
+
+  .media-body {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .media-title {
+    font-size: 24px;
+    line-height: 3;
+  }
+
+  .media-text {
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 50px;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .sec-title {
+    font-size: 24px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .card-text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 2.5;
+    width: 100%;
+    height: auto;
+  }
+
+  .news-list {
+    font-weight: normal;
+  }
+
+  .info-sec {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .hospital-info {
+    text-align: center;
+  }
+
+  .hospital-adress {
+    justify-content: center;
+  }
 }
